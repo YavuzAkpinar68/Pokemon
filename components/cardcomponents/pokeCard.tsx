@@ -44,7 +44,7 @@ const PokeCard = (props) => {
             <Text style={styles.header}>Breedings</Text>
           </View>
           <Text style={styles.text}>
-            Egg Groups: {data.breedings.eggGroups[0]}, {data.breedings.eggGroups[0]}</Text>
+            Egg Groups: {data.breedings.eggGroups[0]}, {data.breedings.eggGroups[1]}</Text>
           <Text style={styles.text}>
             Gender: male  {data.breedings.gender.male}, female {data.breedings.gender.female}</Text>
           <Text style={styles.text}>

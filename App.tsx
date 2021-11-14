@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
-import { FlatList, StyleSheet, Text, View, Button, ActivityIndicator } from 'react-native';
+import { FlatList, View, ActivityIndicator } from 'react-native';
 import axios from 'axios';
 import Card from './components/cardcomponents/card';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -11,11 +10,11 @@ const Stack = createNativeStackNavigator()
 
 
  function App1() {
-  const [data, setDatas] = useState()
+  const [data, setData] = useState()
   const [isActive, setisActive] = useState<boolean>(true)
   useEffect(() => {setisActive(false)}, [data])
   useEffect(() => {
-    axios.get("https://pokemon-db-json.herokuapp.com/").then(e => setDatas(e.data))
+    axios.get("https://pokemon-db-json.herokuapp.com/").then(e => setData(e.data))
   }, [])
   
   return (

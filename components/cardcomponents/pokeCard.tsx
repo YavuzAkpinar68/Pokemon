@@ -4,7 +4,7 @@ import { Image, SafeAreaView, ScrollView, View, Text, StyleSheet, Dimensions } f
 const PokeCard = (props) => {
   const data = props.route.params.data
   return(
-   <SafeAreaView style={{flex:1,backgroundColor:"aliceblue"}}>
+   <SafeAreaView style={{backgroundColor:"aliceblue"}}>
      <ScrollView>
        <View style={styles.imageView}>
          <Image 
@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
   
   imageView:{
     alignItems:"center",
-    flex:1,
     borderRadius:15,
     
   },
@@ -87,7 +86,6 @@ const styles = StyleSheet.create({
     
   },
   generalView:{
-    flex:1,
     justifyContent:"space-between",
     padding:10,
     backgroundColor:"azure",
@@ -96,7 +94,6 @@ const styles = StyleSheet.create({
     margin:10
   },
   trainingView:{
-    flex:1,
     padding:10,
     justifyContent:"space-between",
     backgroundColor:"bisque",
@@ -105,7 +102,6 @@ const styles = StyleSheet.create({
     margin:10
   },
   breedingsView:{
-    flex:1,
     padding:10,
     justifyContent:"space-between",
     backgroundColor:"lightgreen",
@@ -114,7 +110,6 @@ const styles = StyleSheet.create({
     margin:10
   },
   baseStatsView:{
-    flex:1,
     padding:10,
     justifyContent:"flex-end",
     backgroundColor:"salmon",

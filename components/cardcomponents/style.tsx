@@ -45,6 +45,14 @@ const styles = StyleSheet.create({
   },
   name_container:{
     fontSize:25
+  },
+  searchBar:{
+    padding:5,
+    marginTop:30,
+    borderRadius:10,
+    borderWidth:1,
+    backgroundColor:"silver",
+    margin:5
   }
 })
 export default styles

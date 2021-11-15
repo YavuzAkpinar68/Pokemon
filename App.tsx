@@ -31,6 +31,7 @@ const Stack = createNativeStackNavigator()
         onChangeText={keyword => setKeyword(keyword.toLowerCase())}
         autoCorrect={false}
         autoCompleteType={"off"}
+        autoCapitalize={"none"}
         />
       {isActive ? <ActivityIndicator />
       : <FlatList

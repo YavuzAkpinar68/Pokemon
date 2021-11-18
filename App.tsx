@@ -47,7 +47,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={App1} options={{headerShown:false}}></Stack.Screen>
-        <Stack.Screen name="PokeCard" component={PokeCard}></Stack.Screen>
+        <Stack.Screen name="PokeCard" component={PokeCard} options={{headerTitleAlign:"center"}}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   )
